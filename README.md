@@ -6,7 +6,7 @@ pseudorandom sequences
 
 Main file is Random_generators/As_Cript_WPF/Model.cs
 
-LehmerLow
+LehmerLow/n
 LehmerHigh
 L20
 L89
