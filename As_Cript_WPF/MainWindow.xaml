@@ -1,0 +1,56 @@
+﻿<Window x:Class="As_Cript_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:As_Cript_WPF"
+        mc:Ignorable="d"
+        Title="Laba_crypt_N1" Height="409.004" Width="750">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="338*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox Name="generator" HorizontalAlignment="Left" Margin="50,40,0,0" VerticalAlignment="Top" Width="150" Height="30" Grid.ColumnSpan="2">
+            <ComboBoxItem IsSelected="True" Content="Вбудований"></ComboBoxItem>
+            <ComboBoxItem Content="LehmerLow"></ComboBoxItem>
+            <ComboBoxItem Content="LehmerHigh"></ComboBoxItem>
+            <ComboBoxItem Content="L20"></ComboBoxItem>
+            <ComboBoxItem Content="L89"></ComboBoxItem>
+            <ComboBoxItem Content="Geffe"></ComboBoxItem>
+            <ComboBoxItem Content="Biblio"></ComboBoxItem>
+            <ComboBoxItem Content="Wolfram"></ComboBoxItem>
+            <ComboBoxItem Content="BM"></ComboBoxItem>
+            <ComboBoxItem Content="BM_bytes"></ComboBoxItem>
+            <ComboBoxItem Content="BBS"></ComboBoxItem>
+            <ComboBoxItem Content="BBS_bytes"></ComboBoxItem>
+        </ComboBox>
+        <Label Name="label1" Content="Генератор" HorizontalAlignment="Left" Margin="18,9,0,0" VerticalAlignment="Top" Width="116" Grid.Column="1"/>
+        <ComboBox x:Name="test" HorizontalAlignment="Left" Margin="50,183,0,0" VerticalAlignment="Top" Width="140" Height="30" Grid.ColumnSpan="2" >
+            <ComboBoxItem IsSelected="True" Content="Рівномірність"/>
+            <ComboBoxItem Content="Незалежність"/>
+            <ComboBoxItem Content="Однорідність"/>
+        </ComboBox>
+        <ComboBox x:Name="kvantil" HorizontalAlignment="Left" Margin="138,183,0,0" VerticalAlignment="Top" Width="140" Height="30" Grid.Column="1" >
+            <ComboBoxItem IsSelected="True" Content="0,01"/>
+            <ComboBoxItem Content="0,05"/>
+            <ComboBoxItem Content="0,1"/>
+        </ComboBox>
+        <Label x:Name="label2" Content="Тест" HorizontalAlignment="Center" Margin="18,153,542,0" VerticalAlignment="Top" Width="116" Grid.Column="1"/>
+        <Label x:Name="label3" Content="Квантиль" HorizontalAlignment="Center" Margin="172,153,388,0" VerticalAlignment="Top" Width="116" Grid.Column="1"/>
+        <Label x:Name="label4" Content="К-ть бітів" HorizontalAlignment="Center" Margin="171.949,9,388,0" VerticalAlignment="Top" Width="116" Grid.Column="1"/>
+        <Button Content="Згенерувати" HorizontalAlignment="Left" Margin="309,40,0,0" VerticalAlignment="Top" Width="160" Height="30" Click="gen_click" Grid.Column="1"/>
+        <TextBox Name="kilk" HorizontalAlignment="Left" Text="10000" Height="30" Margin="154,40,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  Width="124" Grid.Column="1"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="260" Margin="309,83,0,0" VerticalAlignment="Top" Width="347" Grid.Column="1">
+            <TextBlock TextWrapping="Wrap" Name="textBuffer" Background="WhiteSmoke"></TextBlock>
+        </ScrollViewer>
+        <Button Name="start_button"  Content="Старт" FontWeight="Black" FontStyle="Italic" FontSize="18" HorizontalAlignment="Left" Margin="50,226,0,0" VerticalAlignment="Top" Width="294" Height="44" Click="start_button_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="del_button"  Content="Очистити" HorizontalAlignment="Left" Margin="496,40,0,0" VerticalAlignment="Top" Width="160" Height="30" Click="del_button_Click" Grid.Column="1"/>
+        <ComboBox x:Name="combox_files" HorizontalAlignment="Left" Margin="50,106,0,0" VerticalAlignment="Top" Width="150" Height="30" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_open_file" Content="Відкрити файл ..\data\" HorizontalAlignment="Left" Margin="50,75,0,0" VerticalAlignment="Top" Width="140" Grid.ColumnSpan="2"/>
+        <Button Content=">" Grid.Column="1" HorizontalAlignment="Left" Margin="227,106,0,0" VerticalAlignment="Top" Width="51" Height="30" Click="Button_Click_1"/>
+        <Button Name="result" Background="White" HorizontalAlignment="Left" Margin="50,302,0,0" VerticalAlignment="Top" Width="294" BorderThickness="5,5,5,5" BorderBrush="Gray" Grid.ColumnSpan="2" Height="41"/>
+        <Button Name="downl" Content="&lt;" Grid.Column="1" HorizontalAlignment="Left" Margin="154,106,0,0" VerticalAlignment="Top" Width="51" Height="30"  RenderTransformOrigin="1.852,0.556" Click="downl_Click"/>
+        <Label Name="timer" Grid.Column="1" HorizontalAlignment="Left" Margin="467,344,0,0" VerticalAlignment="Top" Height="24" Width="87"/>
+    </Grid>
+</Window>
