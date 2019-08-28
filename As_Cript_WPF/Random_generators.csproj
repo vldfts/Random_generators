@@ -95,6 +95,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="bin\Debug\data\rwefwef.txt" />
+    <Resource Include="bin\Debug\data\trtr.txt" />
+    <Resource Include="bin\Debug\texts\text.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="rwefwef.txt" />
+    <Resource Include="trtr.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="text.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
