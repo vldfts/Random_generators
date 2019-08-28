@@ -18,6 +18,7 @@ BBS
 
 
 For working with files:
+
 Create "data" and "texts" folders in "Debug" folder
 
 Move rwefwef.txt and trtr.txt into "data" folder
