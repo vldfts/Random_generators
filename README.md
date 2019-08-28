@@ -22,4 +22,5 @@ For working with files:
 Create "data" and "texts" folders in "Debug" folder
 
 Move rwefwef.txt and trtr.txt into "data" folder
+
 Move text.txt into "texts" folder
