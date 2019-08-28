@@ -96,10 +96,5 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Resource Include="bin\Debug\data\rwefwef.txt" />
-    <Resource Include="bin\Debug\data\trtr.txt" />
-    <Resource Include="bin\Debug\texts\text.txt" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
