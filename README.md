@@ -23,4 +23,6 @@ Create "data" and "texts" folders in "Debug" folder
 
 Move rwefwef.txt and trtr.txt into "data" folder
 
+For working with Biblio:
+
 Move text.txt into "texts" folder
